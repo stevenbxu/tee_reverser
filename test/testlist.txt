@@ -1,0 +1,11 @@
+salt
+pepper
+paprika
+basil
+chicken
+spinach
+sugar
+tofu
+seitan
+garlic
+chiles

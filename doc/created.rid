@@ -1,0 +1,11 @@
+Mon, 09 Dec 2013 23:43:32 -0800
+./lib/tee_reverser/execute.rb	Mon, 09 Dec 2013 23:28:56 -0800
+./lib/tee_reverser/pantry.rb	Mon, 09 Dec 2013 23:24:22 -0800
+./lib/tee_reverser/recipe_list.rb	Mon, 09 Dec 2013 23:22:21 -0800
+./lib/tee_reverser/reverser.rb	Mon, 09 Dec 2013 23:27:46 -0800
+./lib/tee_reverser/version.rb	Mon, 09 Dec 2013 23:33:38 -0800
+./lib/tee_reverser.rb	Mon, 09 Dec 2013 23:32:33 -0800
+./test/pantry_spec.rb	Mon, 09 Dec 2013 22:45:11 -0800
+./test/recipe_list_spec.rb	Mon, 09 Dec 2013 22:45:22 -0800
+./test/reverser_spec.rb	Mon, 09 Dec 2013 22:45:39 -0800
+./test/testlist.txt	Sun, 08 Dec 2013 22:31:21 -0800

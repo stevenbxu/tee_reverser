@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=IBM437" http-equiv="Content-Type">
+
+<title>module TeeReverser - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/tee_reverser/execute.rb
+    <li>lib/tee_reverser/version.rb
+    <li>lib/tee_reverser.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-execute">::execute</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./test/testlist_txt.html">testlist</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Pantry.html">Pantry</a>
+  
+    <li><a href="./RecipeList.html">RecipeList</a>
+  
+    <li><a href="./Reverser.html">Reverser</a>
+  
+    <li><a href="./TeeReverser.html">TeeReverser</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module TeeReverser</h1>
+
+  <div id="description" class="description">
+    
+<p>TeeReverser: (Tee =&gt; Eet...eat!)</p>
+<dl class="rdoc-list note-list"><dt>Author
+<dd>
+<p>Steven Xu (mailto: steven.b.xu at gmail.com)</p>
+</dd><dt>Copyright
+<dd>
+<p>Copyright (c) 2013, Steven Xu</p>
+</dd><dt>License
+<dd>
+<p>Distributes under the same terms as Ruby</p>
+</dd></dl>
+
+<p><a href="TeeReverser.html">TeeReverser</a> is a gem that assists in the
+complex decision making process that is deciding what to cook. Given a text
+file with a list of ingredients that you own in your very own pantry, as
+well as a desired dish that you wish to make, <a
+href="TeeReverser.html">TeeReverser</a> returns two recipes from Yummly.com
+that  have the best match with your pantry -- thereby saving you an average
+of  four seconds of decision making every time!</p>
+
+<p>To run, require 'tee_reverser' and enter <a
+href="TeeReverser.html#method-c-execute">::execute</a> in the command line.
+<a href="TeeReverser.html">TeeReverser</a> requires the Yummly and CSV gems
+to run.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="VERSION">VERSION
+        
+        <dd class="description"><p>The latest and greatest. As of 2013-12-09.</p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-execute" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">execute</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This method runs the program.</p>
+          
+
+          
+          <div class="method-source-code" id="execute-source">
+            <pre><span class="ruby-comment"># File lib/tee_reverser/execute.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">execute</span>
+<span class="ruby-constant">Yummly</span>.<span class="ruby-identifier">configure</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">config</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">config</span>.<span class="ruby-identifier">app_id</span> = <span class="ruby-string">&quot;bddcbcff&quot;</span>
+          <span class="ruby-identifier">config</span>.<span class="ruby-identifier">app_key</span> = <span class="ruby-string">&quot;9245c33f2cc6d6bedb65715d3fb66c61&quot;</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Please give me the filepath of your pantry list, in .txt format.&quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Your list will ideally have any each ingredient you wish to itemize in its own line.&quot;</span>
+        <span class="ruby-identifier">location</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+        <span class="ruby-comment">#ensures only proper objects get loaded</span>
+        <span class="ruby-keyword">until</span> <span class="ruby-regexp">/.txt/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">location</span>.<span class="ruby-identifier">to_str</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-node">&quot;#{location}&quot;</span>) <span class="ruby-keyword">do</span>
+          <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Please give me a valid filepath and name. File must exist and be in *.txt format.&quot;</span>
+          <span class="ruby-identifier">location</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">goods</span> = <span class="ruby-constant">Pantry</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">location</span>)
+        <span class="ruby-identifier">goods</span>.<span class="ruby-identifier">parse</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;What kind of dish would you like to make?&quot;</span>
+        <span class="ruby-identifier">wishlist</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;-------------------C O N N E C T I N G---------------------&quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+        <span class="ruby-identifier">query</span> = <span class="ruby-constant">Yummly</span>.<span class="ruby-identifier">search</span>(<span class="ruby-node">&quot;#{wishlist}&quot;</span>)
+        <span class="ruby-identifier">meal</span> = <span class="ruby-constant">RecipeList</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">query</span>)
+        <span class="ruby-identifier">meal</span>.<span class="ruby-identifier">listbuilder</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;---------------------T H I N K I N G-----------------------&quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+        <span class="ruby-identifier">decisions</span> = <span class="ruby-constant">Reverser</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">goods</span>.<span class="ruby-identifier">list</span>, <span class="ruby-identifier">meal</span>.<span class="ruby-identifier">recipehash</span>)
+        <span class="ruby-identifier">decisions</span>.<span class="ruby-identifier">reverse</span>
+        <span class="ruby-identifier">decisions</span>.<span class="ruby-identifier">choose</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-string">&quot;Bon appetit!&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- execute-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- execute-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

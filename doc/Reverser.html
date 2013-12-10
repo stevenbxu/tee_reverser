@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=IBM437" http-equiv="Content-Type">
+
+<title>class Reverser - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/tee_reverser/reverser.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-choose">#choose</a>
+    
+    <li><a href="#method-i-reverse">#reverse</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./test/testlist_txt.html">testlist</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Pantry.html">Pantry</a>
+  
+    <li><a href="./RecipeList.html">RecipeList</a>
+  
+    <li><a href="./Reverser.html">Reverser</a>
+  
+    <li><a href="./TeeReverser.html">TeeReverser</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Reverser</h1>
+
+  <div id="description" class="description">
+    
+<p>This class is responsible for comparing the list generated from <a
+href="Pantry.html">Pantry</a> and the hash generated from <a
+href="RecipeList.html">RecipeList</a>, and delivering the recipes with  the
+maximum number of ingredient matches.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-eat" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">eat</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>This is a hash of recipes, sorted by score, in the form of an Array.</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-pantrylist" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">pantrylist</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>This is the array of ingredients that we receive from performing <a
+href="Pantry.html#method-i-parse">Pantry#parse</a>.</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-tee" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">tee</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>This is the hash of recipes/ingredients that we processed (via Yummly) with
+<a href="RecipeList.html">RecipeList</a>.</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(pantrylist, tee)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This creates a new <a href="Reverser.html">Reverser</a> object, which is
+described by a sorted hash in the form of an Array of Arrays.</p>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/tee_reverser/reverser.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">pantrylist</span>, <span class="ruby-identifier">tee</span>)
+        <span class="ruby-ivar">@pantrylist</span> = <span class="ruby-identifier">pantrylist</span>
+        <span class="ruby-ivar">@tee</span> = <span class="ruby-identifier">tee</span>
+        <span class="ruby-ivar">@eat</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-choose" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">choose</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This method concludes the Execute method, and churns out the top 2  recipe
+picks for the end user to pick from.</p>
+          
+
+          
+          <div class="method-source-code" id="choose-source">
+            <pre><span class="ruby-comment"># File lib/tee_reverser/reverser.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">choose</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Your best options are #{@eat[-1][0]}, and #{@eat[-2][0]}. You already have #{@eat[-1][-1][-1]}, and #{@eat[-2][-1][-1]} ingredients for each of those, respectively.&quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+        <span class="ruby-identifier">ingredients1</span> = <span class="ruby-ivar">@eat</span>[<span class="ruby-value">-1</span>][<span class="ruby-value">-1</span>]
+        <span class="ruby-identifier">ingredients1</span>.<span class="ruby-identifier">pop</span>
+        <span class="ruby-identifier">ingredients2</span> = <span class="ruby-ivar">@eat</span> [<span class="ruby-value">-2</span>][<span class="ruby-value">-1</span>]
+        <span class="ruby-identifier">ingredients2</span>.<span class="ruby-identifier">pop</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;The ingredients for #{@eat[-1][0]} are: #{ingredients1.join(&quot;, &quot;)}.&quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;The ingredients for #{@eat[-2][0]} are: #{ingredients2.join(&quot;, &quot;)}.&quot;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot; &quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- choose-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- choose-method -->
+
+    
+      <div id="method-i-reverse" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reverse</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>This method is responsible for first, comparing our ingredients with  the
+recipes' ingredients, and then updating the recipe hash with  the
+corresponding match scores, and then sorting the hash by that score.</p>
+          
+
+          
+          <div class="method-source-code" id="reverse-source">
+            <pre><span class="ruby-comment"># File lib/tee_reverser/reverser.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reverse</span>    
+        <span class="ruby-ivar">@tee</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">templist</span> = <span class="ruby-identifier">v</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot; &quot;</span>)
+                <span class="ruby-keyword">for</span> <span class="ruby-identifier">num</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@pantrylist</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+                        <span class="ruby-ivar">@tee</span>[<span class="ruby-identifier">k</span>][<span class="ruby-value">-1</span>]<span class="ruby-operator">+=</span><span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-node">/#{@pantrylist[num]}/</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">templist</span>)
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-ivar">@eat</span> = <span class="ruby-ivar">@tee</span>.<span class="ruby-identifier">sort_by</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">v</span>[<span class="ruby-value">-1</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- reverse-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- reverse-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
