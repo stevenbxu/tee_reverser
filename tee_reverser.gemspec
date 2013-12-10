@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email       = 'steven.b.xu@gmail.com'
   s.files       = ["lib/tee_reverser.rb", "lib/tee_reverser/execute.rb", "lib/tee_reverser/pantry.rb", "lib/tee_reverser/recipe_list.rb", "lib/tee_reverser/reverser.rb", "lib/tee_reverser/version.rb", "test", "doc"]
   s.requirements  << 'Yummly, CSV'
-  s.homepage    = 'http://rubygems.org/gems/tee_reverser'
+  s.homepage    = 'https://github.com/stevenbxu/tee_reverser'
   s.license     = 'The MIT License (MIT)'
   s.test_files  = Dir.glob('test')
 end
